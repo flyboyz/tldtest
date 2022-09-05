@@ -1,0 +1,129 @@
+header {
+  .logo {
+    font-family: 'PF DinDisplay Pro';
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.menu-line {
+  font-size: 16px;
+  background: #F5F5F5;
+  border: 1px solid #E5E5E5;
+
+  .mobile {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    [class^="fa-"] {
+      color: #9A9D9F;
+    }
+  }
+
+  .desktop {
+    display: none;
+    padding: 6px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      a {
+        display: flex;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        align-items: center;
+        letter-spacing: 0.005em;
+        text-decoration: none;
+      }
+    }
+
+    .menu {
+      li + li {
+        margin-left: 26px;
+      }
+
+      a {
+        padding-top: 4px;
+        text-transform: uppercase;
+        color: #212121;
+      }
+    }
+
+    .fast-links {
+      gap: 8px;
+
+      li {
+        a {
+          display: flex;
+          padding: 0 12px;
+          height: 32px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+          color: #242526;
+        }
+
+        span:not([class^="fa-"]) {
+          padding-top: 3px;
+        }
+
+        &.youtube a {
+          background-color: #CD201F;
+          color: white;
+
+          .fa-youtube-play {
+            margin-right: 4px;
+            font-size: 20px;
+          }
+        }
+
+        &.play-market {
+          @media screen and (max-width: 1199px) {
+            display: none;
+          }
+
+          a {
+            height: 30px;
+            background: #F5F5F5;
+            border: 1px solid #9A9D9F;
+          }
+
+          img {
+            margin-right: 7px;
+          }
+        }
+
+        &.search a {
+          padding: 0;
+          width: 32px;
+          font-size: 20px;
+          background-color: #2F8F41;
+          color: white;
+        }
+      }
+    }
+  }
+}

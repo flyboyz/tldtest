@@ -1,0 +1,41 @@
+.bookmaker-mini {
+  display: flex;
+  margin-bottom: 20px;
+
+  img {
+    margin-right: 15px;
+    width: 100px;
+    max-height: 80px;
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .line {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #242526;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 15px;
+    color: #9A9D9F;
+  }
+
+  .button {
+    text-transform: uppercase;
+  }
+}
